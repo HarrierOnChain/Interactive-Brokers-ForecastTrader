@@ -7,7 +7,7 @@
 
 > Automated **Interactive Brokers ForecastTrader trading bot** — Financial events. Part of the [Prediction Market Toolkits](https://github.com/HarrierOnChain/Prediction-Markets-Trading-Bot-Toolkits) suite: one execution core, one risk layer, every venue.
 
-**Interactive Brokers ForecastTrader** is on the **adapter-driven roadmap** — the engine is built; the Interactive Brokers ForecastTrader adapter is in the queue. Trade it and want it prioritized? [Reach out](https://t.me/HarrierOnChain) and it moves up.
+**Interactive Brokers ForecastTrader** is **live in production today.**
 
 ---
 
@@ -22,6 +22,20 @@ These bots run on Interactive Brokers ForecastTrader through a single venue adap
 | 💰 **Market Making** — be the house, not the gambler (two-sided GTD, inventory skew) |
 
 > Want a strategy not listed here on Interactive Brokers ForecastTrader? Adapter coverage is demand-driven — [ask](https://t.me/HarrierOnChain).
+
+---
+
+## Quickstart
+
+Clone, drop in your keys, and run — the TUI lets you pick a strategy.
+
+```bash
+git clone https://github.com/HarrierOnChain/Interactive-Brokers-ForecastTrader.git
+cd Interactive-Brokers-ForecastTrader
+cp config.example.yaml config.yaml   # add your keys
+cargo run --release                  # launch the TUI
+# headless: cargo run --release -- run copy-trading
+```
 
 ---
 
